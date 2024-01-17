@@ -13,15 +13,16 @@ class _MenuAplikasiPageState extends State<MenuAplikasiPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-      title: logo(CupertinoIcons.checkmark_alt_circle, Colors.white, 35),
-      centerTitle: false,
-      backgroundColor: Colors.lightBlue[900],
-  
-    ));
+      appBar: AppBar(
+        title: logo(CupertinoIcons.checkmark_alt_circle, Colors.white, 35),
+        centerTitle: false,
+        backgroundColor: Colors.lightBlue[900],
+      ),
+      floatingActionButton: const FloatingActionButton(
+        onPressed: null,
+        tooltip: 'Increment',
+        child: Icon(Icons.add),
+      ),
+    );
   }
-  // FloatingActionButton:FloatingActionButton(onPressed: _incrementCounter,
-  //       tooltip: 'Increment',
-  //       child: const Icon(Icons.add),),
 }
-
